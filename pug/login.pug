@@ -1,0 +1,56 @@
+extends includes/header.pug
+
+block content
+
+	body.body-bgd.page-login
+		main.wrapper
+			//- include includes/aside.pug
+			.main-right
+				header
+					a(href="#").header__logo
+						img(src="img/svg/logo.svg" alt="Logo")
+					//- .header
+						a(href="#").header__appointment Запись на приём
+						a(href="#").header__payment Оплата
+						a(href="#").header__persone
+							img(src="img/persone.png" alt="Persone")
+							span Татьяна Иванова
+						a(href="#").header__exit
+							img(src="img/svg/exit.svg" alt="Exit")
+							span Выход
+		section.page-login__content
+			h1 Авторизация
+			input.page-login__number(value="+7(___)___-____")
+			button Получить код
+			p © МедекаДенталГрупп, 2021
+
+
+	include includes/footer-scripts.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

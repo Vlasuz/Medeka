@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Site was developed by Vlas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Description of website">
+  <meta name="keywords" content="Website">
+  <!-- Montserrat FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+  <!-- Slick SLIDER -->
+  <link rel="stylesheet" href="css/slick/slick-theme.css">
+  <link rel="stylesheet" href="css/slick/slick.css">
+  <!-- Slick SLIDER -->
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="body-bgd page-appointment">
+  <div class="logo-mob">
+    <img src="img/svg/logo-mob-w.svg" alt="Logo">
+  </div>
+  <main class="wrapper">
+    <aside>
+      <a class="aside__logo" href="#">
+        <img src="img/svg/logo.svg" alt="Logo">
+      </a>
+      <ul>
+        <li>
+          <a href="#">
+            <img src="img/aside-ico-1.png" alt="Ico" width="26"><span>Главная</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/svg/aside-ico-2.svg" alt="Ico"><span>Профиль</span>
+          </a>
+        </li>
+        <li class="li_active">
+          <a href="#">
+            <img src="img/svg/aside-ico-3.svg" alt="Ico"><span>Запись на приём</span><span class="span-mob">Запись</span>
+          </a>
+        </li>
+        <li class="li__logo_mob">
+          <a href="#">
+            <img src="img/svg/logo-mob.svg" alt="Ico">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/svg/aside-ico-4.svg" alt="Ico"><span>Лечение</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/svg/aside-ico-5.svg" alt="Ico"><span>Оплата</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/svg/aside-ico-6.svg" alt="Ico"><span>Услуги</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <div class="main-right">
+      <header>
+        <div class="header"><a class="header__appointment" href="#">Запись на приём</a><a class="header__payment" href="#">Оплата</a>
+          <a class="header__persone" href="#">
+            <img src="img/persone.png" alt="Persone"><span>Татьяна Иванова</span>
+          </a>
+          <a class="header__exit" href="#">
+            <img src="img/svg/exit.svg" alt="Exit"><span>Выход</span>
+          </a>
+        </div>
+      </header>
+      <section class="section-page">
+        <div class="big-title">Запись</div>
+        <section class="head-mob">
+          <div class="head-mob__top">
+            <div class="head-mob__title">Запись на приём</div>
+            <div class="head-mob__steps">шаг <span class="current-step">1</span> из <span class="all-steps">3</span>
+            </div>
+          </div>
+          <div class="head-mob__menu">
+            <ul>
+              <li class="li_active">Дата и время</li>
+              <li>Выбор услуг</li>
+              <li>Подтверждение</li>
+            </ul>
+          </div>
+        </section>
+        <h1>Запись на приём</h1>
+        <h2>Выберите дату и время приёма</h2>
+        <section class="section-switcher_active section-switcher section-switcher_1 white-block section-calendar">
+          <div class="section__sides">
+            <div class="lft">
+              <div id="calendar">
+                <div class="calendar__block calendar__block_active calendar__block_9">
+                  <table cellspacing="10">
+                    <thead>
+                      <tr>
+                        <th>пн</th>
+                        <th>вт</th>
+                        <th>ср</th>
+                        <th>чт</th>
+                        <th>пт</th>
+                        <th>сб</th>
+                        <th>вс</th>
+                      </tr>
+                      <tr></tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                      </tr>
+                      <tr>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                      </tr>
+                      <tr>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                      </tr>
+                      <tr>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                        <td>1</td>
+                        <td>2</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="calendar__block calendar__block_10">
+                  <table cellspacing="10">
+                    <thead>
+                      <tr>
+                        <th>пн</th>
+                        <th>вт</th>
+                        <th>ср</th>
+                        <th>чт</th>
+                        <th>пт</th>
+                        <th>сб</th>
+                        <th>вс</th>
+                      </tr>
+                      <tr></tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                      </tr>
+                      <tr>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                      </tr>
+                      <tr>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                      </tr>
+                      <tr>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                      </tr>
+                      <tr></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="calendar__block calendar__block_11">
+                  <table cellspacing="10">
+                    <thead>
+                      <tr>
+                        <th>пн</th>
+                        <th>вт</th>
+                        <th>ср</th>
+                        <th>чт</th>
+                        <th>пт</th>
+                        <th>сб</th>
+                        <th>вс</th>
+                      </tr>
+                      <tr></tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                      </tr>
+                      <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                      </tr>
+                      <tr>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                      </tr>
+                      <tr>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="calendar__block calendar__block_12">
+                  <table cellspacing="10">
+                    <thead>
+                      <tr>
+                        <th>пн</th>
+                        <th>вт</th>
+                        <th>ср</th>
+                        <th>чт</th>
+                        <th>пт</th>
+                        <th>сб</th>
+                        <th>вс</th>
+                      </tr>
+                      <tr></tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td class="td_have-order">10</td>
+                        <td>11</td>
+                        <td>12</td>
+                      </tr>
+                      <tr>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                      </tr>
+                      <tr>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                      </tr>
+                      <tr>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                        <td>1</td>
+                        <td>2</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="calendar__mounths">
+                <ul>
+                  <li class="li_active" data-mounth="9">Сентябрь</li>
+                  <li data-mounth="10">Октябрь</li>
+                  <li data-mounth="11">Ноябрь</li>
+                  <li data-mounth="12">Декабрь</li>
+                </ul>
+              </div>
+            </div>
+            <div class="rht">
+              <h3>Доступное время</h3>
+              <ul class="calendar__time">
+                <li>11:00 - 12:00</li>
+                <li class="li_active">13:00 - 14:00</li>
+                <li>14:00 - 15:00</li>
+              </ul>
+            </div>
+          </div>
+          <div class="next-step">
+            <button>следующий шаг</button>
+          </div>
+        </section>
+        <h2>2. Выберите услуги</h2>
+        <section class="section-switcher section-switcher_2 white-block services">
+          <div class="section__sides">
+            <div class="lft">
+              <div class="services__search">
+                <input placeholder="Начните вводить название услуги...">
+                <img src="img/svg/search-lupa.svg" alt="Lupa">
+              </div>
+            </div>
+            <div class="services__find">Поиск услуги</div>
+          </div>
+          <div class="services__block">
+            <input type="checkbox" name="servicesName" id="sr1">
+            <label class="label-checkbox services__item" for="sr1">Консультация</label>
+            <input type="checkbox" name="servicesName" id="sr2">
+            <label class="label-checkbox services__item" for="sr2">Профилактика</label>
+            <input type="checkbox" name="servicesName" id="sr3">
+            <label class="label-checkbox services__item" for="sr3">Установка коронки</label>
+          </div>
+          <div class="next-step">
+            <button>следующий шаг</button>
+          </div>
+        </section>
+        <h2>3. Подтвердите запись</h2>
+        <section class="section-switcher section-switcher_3 white-block success">
+          <div class="section__sides">
+            <div class="lft">
+              <div class="success__date">
+                <div class="success__date_item">
+                  <div class="item__lft">
+                    <h4>Дата приёма</h4><b>22 августа 2021 г.</b>
+                  </div>
+                  <a class="item__rht" href="#">
+                    <img src="img/svg/pen.svg" alt="Pen"><span>Редактировать</span>
+                  </a>
+                </div>
+                <div class="success__date_item">
+                  <h4>время</h4><b>13:00 - 14:00</b>
+                </div>
+              </div>
+              <div class="success__services">
+                <h4>Выбранные Услуги</h4>
+                <div class="success__services_block">
+                  <div class="success__services_item"><b>Консультация</b><span class="price">+ 950₽</span>
+                  </div>
+                  <div class="success__services_item"><b>Профилактика</b><span class="price">+ 1450₽</span>
+                  </div>
+                  <div class="success__services_item"><b>Установка коронки</b><span class="price">+ 21 500₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rht">
+              <h4>Примерная стоимость услуг</h4>
+              <div class="success__sum-price">23 900₽</div>
+              <input type="checkbox" id="scs1">
+              <label class="label-checkbox" for="scs1">Даю своё согласие на обработку моих персональных данных, а также добровольное согласие на все виды услуг.</label>
+              <button class="success__done" data-popup="sent">Записаться на приём</button>
+            </div>
+          </div>
+          <div class="last-step">
+            <button data-popup="sent">Записаться на приём</button>
+          </div>
+        </section>
+      </section>
+    </div>
+  </main>
+  <div class="popup popup-sent">
+    <div class="popup__bgd"></div>
+    <div class="popup__content">
+      <div class="popup__close">
+        <img src="img/svg/close.svg" alt="Close">
+      </div>
+      <div class="popup-sent__top">
+        <div class="popup-sent__head">
+          <img src="img/svg/entypo-location.svg" alt="Close">
+          <p>ул. Авиамоторная, д. 8А, стр. 5</p><a href="#">показать на карте</a>
+        </div>
+      </div>
+      <div class="popup__bottom">
+        <h2>Ваша запись отправлена!</h2>
+        <h2 class="mob">Отлично!</h2>
+        <h3>Ожидайте звонка менеджера.</h3>
+        <h3 class="mob">Ваша запись отправлена. Ожидайте звонка менеджера!</h3>
+        <p>Мы с нетерпением ждем вашего визита. Пожалуйста, приходите за 10 минут до начала приёма.</p>
+        <button class="popup__close_button">Спасибо</button>
+      </div>
+    </div>
+  </div>
+</body>
+<footer>
+  <div class="wrapper">
+    <div class="footer">
+      <div class="footer__lft">© МедекаДенталГрупп, 2021</div>
+      <a class="footer__rht" href="#">
+        <img src="img/svg/footer-logo.svg" alt="Logo">
+        <img class="logo-mob" src="img/svg/footer-logo-1.svg" alt="Logo">
+      </a>
+    </div>
+  </div>
+</footer>
+<!-- jQuery JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- slick JS -->
+<script src="js/slick.min.js"></script>
+<!-- wow JS -->
+<script src="js/wow.min.js"></script>
+<!-- main JS -->
+<script src="js/main.js"></script>
+
+</html>

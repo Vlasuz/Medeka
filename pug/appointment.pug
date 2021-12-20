@@ -1,0 +1,168 @@
+extends includes/header.pug
+
+block content
+
+	body.body-bgd.page-appointment
+		.logo-mob
+			img(src="img/svg/logo-mob-w.svg" alt="Logo")
+		main.wrapper
+			include includes/aside.pug
+			.main-right
+				header
+					.header
+						a(href="#").header__appointment Запись на приём
+						a(href="#").header__payment Оплата
+						a(href="#").header__persone
+							img(src="img/persone.png" alt="Persone")
+							span Татьяна Иванова
+						a(href="#").header__exit
+							img(src="img/svg/exit.svg" alt="Exit")
+							span Выход
+
+
+				section.section-page
+					.big-title Запись
+					section.head-mob
+						.head-mob__top
+							.head-mob__title Запись на приём
+							.head-mob__steps шаг <span class="current-step">1</span> из <span class="all-steps">3</span>
+						.head-mob__menu
+							ul
+								li.li_active Дата и время
+								li Выбор услуг
+								li Подтверждение
+
+
+					h1 Запись на приём
+					h2 Выберите дату и время приёма
+
+
+					section.section-switcher_active.section-switcher.section-switcher_1.white-block.section-calendar
+						.section__sides
+							.lft
+								#calendar
+									.calendar__block.calendar__block_active.calendar__block_9
+										<table cellspacing="10"><thead><tr><th>пн</th><th>вт</th><th>ср</th><th>чт</th><th>пт</th><th>сб</th><th>вс</th></tr><tr></tr></thead><tbody><tr><td>29</td><td>30</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr><tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td></tr><tr><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td></tr><tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td></tr><tr><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td>1</td><td>2</td></tr></tbody></table>
+									.calendar__block.calendar__block_10
+										<table cellspacing="10"><thead><tr><th>пн</th><th>вт</th><th>ср</th><th>чт</th><th>пт</th><th>сб</th><th>вс</th></tr><tr></tr></thead><tbody><tr><td>27</td><td>28</td><td>29</td><td>30</td><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr><tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td></tr><tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td></tr><tr></tr></tbody></table>
+									.calendar__block.calendar__block_11
+										<table cellspacing="10"><thead><tr><th>пн</th><th>вт</th><th>ср</th><th>чт</th><th>пт</th><th>сб</th><th>вс</th></tr><tr></tr></thead><tbody><tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr><tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr><tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr><tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr><tr><td>29</td><td>30</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr></tbody></table>
+									.calendar__block.calendar__block_12
+										<table cellspacing="10"><thead><tr><th>пн</th><th>вт</th><th>ср</th><th>чт</th><th>пт</th><th>сб</th><th>вс</th></tr><tr></tr></thead><tbody><tr><td>29</td><td>30</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr><tr><td>6</td><td>7</td><td>8</td><td>9</td><td class="td_have-order">10</td><td>11</td><td>12</td></tr><tr><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td></tr><tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td></tr><tr><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td>1</td><td>2</td></tr></tbody></table>
+								.calendar__mounths
+									ul
+										li(data-mounth="9").li_active Сентябрь
+										li(data-mounth="10") Октябрь
+										li(data-mounth="11") Ноябрь
+										li(data-mounth="12") Декабрь
+							.rht
+								h3 Доступное время
+								ul.calendar__time
+									li 11:00 - 12:00
+									li.li_active 13:00 - 14:00
+									li 14:00 - 15:00
+						.next-step
+							button следующий шаг
+
+					h2 2. Выберите услуги
+					section.section-switcher.section-switcher_2.white-block.services
+						.section__sides
+							.lft
+								.services__search
+									input(placeholder="Начните вводить название услуги...")
+									img(src="img/svg/search-lupa.svg" alt="Lupa")
+							.services__find Поиск услуги
+						.services__block
+							input(type="checkbox" name="servicesName")#sr1
+							label(for="sr1").label-checkbox.services__item Консультация
+							input(type="checkbox" name="servicesName")#sr2
+							label(for="sr2").label-checkbox.services__item Профилактика
+							input(type="checkbox" name="servicesName")#sr3
+							label(for="sr3").label-checkbox.services__item Установка коронки
+						.next-step
+							button следующий шаг
+
+
+					h2 3. Подтвердите запись
+					section.section-switcher.section-switcher_3.white-block.success
+						.section__sides
+							.lft
+								.success__date
+									.success__date_item
+										.item__lft
+											h4 Дата приёма
+											b 22 августа 2021 г.
+										a(href="#").item__rht
+											img(src="img/svg/pen.svg" alt="Pen")
+											span Редактировать
+									.success__date_item
+										h4 время
+										b 13:00 - 14:00
+								.success__services
+									h4 Выбранные Услуги
+									.success__services_block
+										.success__services_item
+											b Консультация
+											span.price + 950₽
+										.success__services_item
+											b Профилактика
+											span.price + 1450₽
+										.success__services_item
+											b Установка коронки
+											span.price + 21 500₽
+							.rht
+								h4 Примерная стоимость услуг
+								.success__sum-price 23 900₽
+								input(type="checkbox")#scs1
+								label(for="scs1").label-checkbox Даю своё согласие на обработку моих персональных данных, а также добровольное согласие на все виды услуг.
+								button(data-popup="sent").success__done Записаться на приём
+						.last-step
+							button(data-popup="sent") Записаться на приём
+		.popup.popup-sent
+			.popup__bgd
+			.popup__content
+				.popup__close
+					img(src="img/svg/close.svg" alt="Close")
+				.popup-sent__top
+					.popup-sent__head
+						img(src="img/svg/entypo-location.svg" alt="Close")
+						p ул. Авиамоторная, д. 8А, стр. 5 
+						a(href="#") показать на карте
+				.popup__bottom
+					h2 Ваша запись отправлена!
+					h2.mob Отлично!
+					h3 Ожидайте звонка менеджера.
+					h3.mob Ваша запись отправлена. Ожидайте звонка менеджера!
+					p Мы с нетерпением ждем вашего визита. Пожалуйста, приходите за 10 минут до начала приёма.
+					button.popup__close_button Спасибо
+
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

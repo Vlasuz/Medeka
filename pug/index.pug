@@ -1,0 +1,80 @@
+extends includes/header.pug
+
+block content
+
+	body.body-bgd.page-index
+		main.wrapper
+			include includes/aside.pug
+			.main-right
+				header
+					.header
+						a(href="#").header__logo
+							img(src="img/svg/logo.svg" alt="Logo")
+						a(href="#").header__appointment Запись на приём
+						a(href="#").header__payment Оплата
+						a(href="#").header__persone
+							img(src="img/persone.png" alt="Persone")
+							span Татьяна Иванова
+						a(href="#").header__exit
+							img(src="img/svg/exit.svg" alt="Exit")
+							span Выход
+
+
+				section.page-index__content
+					.mob
+						h3 Добро пожаловать, 
+						h2 Татьяна Иванова
+					h1 Добро пожаловать, Татьяна
+					.page-index__block
+						a(href="#").page-index__item
+							p Профиль
+							img(src="img/svg/index-ico-1.svg" alt="Ico")
+						a(href="#").page-index__item
+							p Запись на приём
+							img(src="img/svg/index-ico-2.svg" alt="Ico")
+						a(href="#").page-index__item
+							p Лечение
+							img(src="img/svg/index-ico-3.svg" alt="Ico")
+						a(href="#").page-index__item
+							p Оплата
+							img(src="img/svg/index-ico-4.svg" alt="Ico")
+						a(href="#").page-index__item
+							p Услуги
+							img(src="img/svg/index-ico-5.svg" alt="Ico")
+						a(href="#").page-index__item.page-index__item_exit
+							p Выход
+							img(src="img/svg/exit.svg" alt="Ico")
+
+
+
+
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

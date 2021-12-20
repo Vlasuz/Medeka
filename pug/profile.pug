@@ -1,0 +1,445 @@
+extends includes/header.pug
+
+block content
+
+	body.body-bgd.page-profile
+		.popup.popup-payblock
+			.popup__bgd
+			.popup__content
+				.popup__close
+					img(src="img/svg/close.svg" alt="Close")
+				h2 Счет № 234 от 07.08.2021 г.
+
+				span.span__title Кому платим
+				p.p__main ООО «МедекаДенталГрупп»
+				a(href="#").a__bottom Показать реквизиты
+
+				span.span__title Кто платит
+				p.p__main Деревянко Татьяна Ивановна
+
+				span.span__title За что оплата
+				section.section-table.section-table__orders
+					.section-table__content
+						table
+							thead
+								tr
+									td
+										.td__sides
+											span №
+									td
+										.td__sides
+											span Наименование
+									td
+										.td__sides
+											span Стоимость
+							tbody
+								tr
+									td
+										p 1
+									td
+										p Определение степени патологической подвижности зубов
+									td
+										p 750 руб.
+								tr
+									td
+										p 2
+									td
+										p Консультация врача
+									td
+										p 1 500 руб.
+								tr
+									td
+										p 1
+									td
+										p Удаление зуба простое
+									td
+										p 3 400 руб.
+					.all-sum Итого 5 650 руб.
+				input(type="checkbox")#popCh1
+				label(for="popCh1").label-checkbox Даю <a href="#">добровольное согласие</a> на все виды услуг
+				button(data-popup="thx").button-pay Оплатить
+		.popup.popup-thx
+			.popup__bgd
+			.popup__content
+				.popup__close
+					img(src="img/svg/close.svg" alt="Close")
+				h2 Ваша заявка успешно отправлена!
+				p Ожидайте звонка менеджера для подтверждения записи.
+				button Спасибо
+		main.wrapper
+			include includes/aside.pug
+			.main-right
+				a(href="#").header__logo
+					img(src="img/svg/logo.svg" alt="Logo")
+				header
+					.header
+						a(href="#").header__appointment Запись на приём
+						a(href="#").header__payment Оплата
+						a(href="#").header__persone
+							img(src="img/persone.png" alt="Persone")
+							span Татьяна Иванова
+						a(href="#").header__exit
+							img(src="img/svg/exit.svg" alt="Exit")
+							span Выход
+
+				section.page-profile__content
+					.page-profile__top
+						h1 Деревянко Татьяна Ивановна
+						.copy
+							span № 8889002
+							input(value="№ 8889002")
+							.copy__button
+								img(src="img/svg/copy-ico.svg" alt="Copy")
+						.page-profile__buttons
+							a(href="#").qst Анкета
+							a(href="#").edit
+								img(src="img/svg/edit.svg" alt="Edit")
+								span Изменить профиль
+					.page-profile__top-2
+						p Женщина, 18.06.1996 (25 лет)
+						.position Студент
+					.page-profile__top-3
+						a(href="tel:89991234567").phone
+							img(src="img/svg/phone.svg" alt="Phone")
+							span 8 999 123 45 67
+						a(href="mailto:derevyanko@mail.ru").mail
+							img(src="img/svg/mail-ico.svg" alt="Mail")
+							span derevyanko@mail.ru
+					.page-profile__bottom
+						a(href="#") Персональные данные
+				section.section-table.section-table__visits
+					h2.section-table__title Мои визиты
+					.section-table__content
+						table
+							thead
+								tr
+									td
+										.td__sides
+											span №
+											.sort-ico
+												img(src="img/svg/sort.svg" alt="Sort")
+												img(src="img/svg/sort-1.svg" alt="Sort").reverse
+									td
+										.td__sides
+											span Дата визита
+											.sort-ico
+												img(src="img/svg/sort.svg" alt="Sort")
+												img(src="img/svg/sort-1.svg" alt="Sort").reverse
+									td
+										.td__sides
+											span Врач
+											.sort-ico
+												img(src="img/svg/sort.svg" alt="Sort")
+												img(src="img/svg/sort-1.svg" alt="Sort").reverse
+									td
+										.td__sides
+											span Тип обращения
+											.sort-ico
+												img(src="img/svg/sort.svg" alt="Sort")
+												img(src="img/svg/sort-1.svg" alt="Sort").reverse
+									td
+										.td__sides
+											span Проблема
+											.sort-ico
+												img(src="img/svg/sort.svg" alt="Sort")
+												img(src="img/svg/sort-1.svg" alt="Sort").reverse
+							tbody
+								tr
+									td
+										p 1
+									td
+										p 25.08.2021, 12:20
+									td
+										p Садвакасова А. М.
+									td
+										p Лечение
+									td
+										p Периодонтит
+								tr
+									td
+										p 2
+									td
+										p 31.08.2021, 12:20
+									td
+										p Садвакасова А. М.
+									td
+										p Консультация
+									td
+										p Пломба - кариес (о/р)
+								tr
+									td
+										p 3
+									td
+										p 25.08.2021, 12:20
+									td
+										p Садвакасова А. М.
+									td
+										p Лечение
+									td
+										p Дефект пломбы (д)
+								tr
+									td
+										p 4
+									td
+										p 25.08.2021, 12:20
+									td
+										p Садвакасова А. М.
+									td
+										p Консультация
+									td
+										p Первичная консультация
+					.section-table__bottom
+						.pagination
+							.pagination__arr.pagination__arr_prev
+								img(src='img/svg/left.svg' alt="Prev")
+							.pagination__num 1
+							.pagination__num 2
+							.pagination__num ...
+							.pagination__num 9
+							.pagination__num 10
+							.pagination__arr.pagination__arr_next
+								img(src='img/svg/right.svg' alt="Next")
+						.section-table__all Всего: 1032
+						.section-table__show
+							p Показывать по: 
+							ul
+								li.li_active 10
+								li 20
+								li 30
+
+				section.section-table.section-table__documents
+					h2.section-table__title Документы
+					.section-table__content
+						table
+							thead
+								tr
+									td
+										.td__sides
+											span Наименование
+											.sort-ico
+												img(src="img/svg/sort.svg" alt="Sort")
+												img(src="img/svg/sort-1.svg" alt="Sort").reverse
+									td
+										.td__sides
+											span Дата
+											.sort-ico
+												img(src="img/svg/sort.svg" alt="Sort")
+												img(src="img/svg/sort-1.svg" alt="Sort").reverse
+									td
+										.td__sides
+											span Размер
+											.sort-ico
+												img(src="img/svg/sort.svg" alt="Sort")
+												img(src="img/svg/sort-1.svg" alt="Sort").reverse
+									td
+									td
+							tbody
+								tr
+									td
+										.td__sides
+											img(src="img/svg/file-jpg.svg" alt="JPG")
+											p Рентген
+									td
+										p 25.08.2021, 12:20
+									td
+										p 10 Кб
+									td
+										a(href="#")
+											img(src="img/svg/download-ico.svg" alt="Ico")
+											span Скачать
+									td
+										.td__delete
+											img(src="img/svg/delete.svg" alt="Delete")
+								tr
+									td
+										.td__sides
+											img(src="img/svg/file-w.svg" alt="JPG")
+											p Дополнительное соглашение
+									td
+										p 25.08.2021, 12:20
+									td
+										p 5 Мб
+									td
+										a(href="#")
+											img(src="img/svg/download-ico.svg" alt="Ico")
+											span Скачать
+									td
+										.td__delete
+											img(src="img/svg/delete.svg" alt="Delete")
+								tr
+									td
+										.td__sides
+											img(src="img/svg/file-x.svg" alt="JPG")
+											p Пакет ортодонтический (договор 14 и выше_идс)
+									td
+										p 25.08.2021, 12:20
+									td
+										p 133 Мб
+									td
+										a(href="#")
+											img(src="img/svg/download-ico.svg" alt="Ico")
+											span Скачать
+									td
+										.td__delete
+											img(src="img/svg/delete.svg" alt="Delete")
+								tr
+									td
+										.td__sides
+											img(src="img/svg/file-pdf.svg" alt="JPG")
+											p Пакет документов
+									td
+										p 25.08.2021, 12:20
+									td
+										p 10 Кб
+									td
+										a(href="#")
+											img(src="img/svg/download-ico.svg" alt="Ico")
+											span Скачать
+									td
+										.td__delete
+											img(src="img/svg/delete.svg" alt="Delete")
+					.section-table__bottom
+						.pagination
+							.pagination__arr.pagination__arr_prev
+								img(src='img/svg/left.svg' alt="Prev")
+							.pagination__num 1
+							.pagination__num 2
+							.pagination__num ...
+							.pagination__num 9
+							.pagination__num 10
+							.pagination__arr.pagination__arr_next
+								img(src='img/svg/right.svg' alt="Next")
+						.section-table__all Всего: 1032
+						.section-table__show
+							p Показывать по: 
+							ul
+								li.li_active 10
+								li 20
+								li 30
+
+				section.section-table.section-table__accounts
+					h2.section-table__title Счета
+					.section-table__content
+						table
+							thead
+								tr
+									td
+										.td__sides
+											span №
+											.sort-ico
+												img(src="img/svg/sort.svg" alt="Sort")
+												img(src="img/svg/sort-1.svg" alt="Sort").reverse
+									td
+										.td__sides
+											span Дата
+											.sort-ico
+												img(src="img/svg/sort.svg" alt="Sort")
+												img(src="img/svg/sort-1.svg" alt="Sort").reverse
+									td
+										.td__sides
+											span Статус
+											.sort-ico
+												img(src="img/svg/sort.svg" alt="Sort")
+												img(src="img/svg/sort-1.svg" alt="Sort").reverse
+									td
+										.td__sides
+											span Наименование
+											.sort-ico
+												img(src="img/svg/sort.svg" alt="Sort")
+												img(src="img/svg/sort-1.svg" alt="Sort").reverse
+									td
+										.td__sides
+											span Стоимость
+											.sort-ico
+												img(src="img/svg/sort.svg" alt="Sort")
+												img(src="img/svg/sort-1.svg" alt="Sort").reverse
+									td
+							tbody
+								tr
+									td
+										p 1
+									td
+										p 25.08.2021
+									td
+										.status.status_cancel отменен
+									td
+										p Зуб(ы): 11-18,21-28,31-38,41-48 Профессиональная игра в хокей
+									td
+										p 13 400 руб.
+									td
+								tr
+									td
+										p 2
+									td
+										p 31.08.2021
+									td
+										.status.status_waiting ожидает оплаты
+									td
+										p Первичная консультация гигиена
+									td
+										p 5700 руб.
+									td
+										button(data-popup="payblock") Оплатить
+								tr
+									td
+										p 3
+									td
+										p 25.08.2021
+									td
+										.status.status_done оплачен
+									td
+										p Фторирование
+									td
+										p 1050 руб.
+									td
+					.section-table__bottom
+						.pagination
+							.pagination__arr.pagination__arr_prev
+								img(src='img/svg/left.svg' alt="Prev")
+							.pagination__num 1
+							.pagination__num 2
+							.pagination__num ...
+							.pagination__num 9
+							.pagination__num 10
+							.pagination__arr.pagination__arr_next
+								img(src='img/svg/right.svg' alt="Next")
+						.section-table__all Всего: 1032
+						.section-table__show
+							p Показывать по: 
+							ul
+								li.li_active 10
+								li 20
+								li 30
+
+
+
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

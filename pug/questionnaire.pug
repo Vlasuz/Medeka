@@ -1,0 +1,206 @@
+extends includes/header.pug
+
+block content
+
+	body.body-bgd.page-questionnaire
+		main.wrapper
+			include includes/aside.pug
+			.main-right
+				a(href="#").header__logo
+					img(src="img/svg/logo.svg" alt="Logo")
+				header
+					.header
+						a(href="#").header__appointment Запись на приём
+						a(href="#").header__payment Оплата
+						a(href="#").header__persone
+							img(src="img/persone.png" alt="Persone")
+							span Татьяна Иванова
+						a(href="#").header__exit
+							img(src="img/svg/exit.svg" alt="Exit")
+							span Выход
+
+				section.page-questionnaire__mob
+					.big Анкета
+					.mob__top
+						.position Студент
+						.copy
+							span № 8889002
+							input(value="№ 8889002")
+							.copy__button
+								img(src="img/svg/copy1.svg" alt="Copy")
+
+				section.page-questionnaire__content
+					h1 Анкета пациента Татьяна Иванова
+					.head-mob__menu
+						ul
+							li Инфо
+							li.li_active Анкета
+					.page-questionnaire__item
+						.item__lft Заболевание сердца *
+						.item__rht
+							.item__radio Да
+							.item__radio.item__radio_active Нет
+					.page-questionnaire__item
+						.item__lft Артериальное давление *
+						.item__rht
+							.item__radio Повышенное
+							.item__radio.item__radio_active Нормальное
+							.item__radio Пониженное
+					.page-questionnaire__item
+						.item__lft Бывает ли головокружение, потери сознания, одышка и т.д., при введении анестетиков или др. лекарственных препаратов?
+						.item__rht
+							.item__radio Да
+							.item__radio.item__radio_active Нет
+					.page-questionnaire__item
+						.item__lft Эпилепсия, другие заболевания центральной и периферической нервной системы? *
+						.item__rht
+							.item__radio Да
+							.item__radio.item__radio_active Нет
+					.page-questionnaire__item
+						.item__lft Бронхиальная астма *
+						.item__rht
+							.item__radio Да
+							.item__radio.item__radio_active Нет
+					.page-questionnaire__item
+						.item__lft Болели ли Вы гепатитом (желтухой)? *
+						.item__rht
+							.item__radio Да
+							.item__radio.item__radio_active Нет
+					.page-questionnaire__item
+						.item__lft Болели ли Вы ВИЧ? *
+						.item__rht
+							.item__radio Да
+							.item__radio.item__radio_active Нет
+					.page-questionnaire__item
+						.item__lft Болели ли Вы туберкулезом? *
+						.item__rht
+							.item__radio Да
+							.item__radio.item__radio_active Нет
+					.page-questionnaire__item
+						.item__lft Нарушения свертываемости крови *
+						.item__rht
+							.item__radio Да
+							.item__radio.item__radio_active Нет
+					.page-questionnaire__item
+						.item__lft Курите ли вы? *
+						.item__rht
+							.item__radio Да
+							.item__radio.item__radio_active Нет
+					.page-questionnaire__item
+						.item__lft Аллергические реакции: *
+						.item__rht
+							.item__radio Да
+							.item__radio.item__radio_active Нет
+					.page-questionnaire__item.page-questionnaire__item_sub
+						.item__lft на местные анестетики *
+						.item__rht
+							.item__radio Да
+							.item__radio.item__radio_active Нет
+					.page-questionnaire__item.page-questionnaire__item_sub
+						.item__lft на антибиотики *
+						.item__rht
+							.item__radio Да
+							.item__radio.item__radio_active Нет
+					.page-questionnaire__item.page-questionnaire__item_sub
+						.item__lft на сульфанилимиды *
+						.item__rht
+							.item__radio Да
+							.item__radio.item__radio_active Нет
+					.page-questionnaire__item.page-questionnaire__item_sub
+						.item__lft на препараты йода *
+						.item__rht
+							.item__radio Да
+							.item__radio.item__radio_active Нет
+					.page-questionnaire__item.page-questionnaire__item_sub
+						.item__lft на гормональные препараты *
+						.item__rht
+							.item__radio Да
+							.item__radio.item__radio_active Нет
+					.page-questionnaire__item.page-questionnaire__item_sub
+						.item__lft на другие лекарственные препараты *
+						.item__rht
+							.item__radio Да
+							.item__radio.item__radio_active Нет
+					.page-questionnaire__item
+						.item__lft Лучевая терапия, химиотерапия за последние 10 лет *
+						.item__rht
+							.item__radio Да
+							.item__radio.item__radio_active Нет
+					.page-questionnaire__item
+						.item__lft Принимаете ли Вы седативные препараты *
+						.item__rht
+							.item__radio Да
+							.item__radio.item__radio_active Нет
+					.page-questionnaire__item
+						.item__lft Беременны ли Вы? *
+						.item__rht
+							.item__radio Да
+							.item__radio.item__radio_active Нет
+					.page-questionnaire__item
+						.item__lft Перенесенные и сопутствующие заболевания *
+						.item__rht
+							textarea
+					.page-questionnaire__item
+						.item__lft Ф.И.О. К кому обращаться в случае необходимости *
+						.item__rht
+							input(type="text")
+					.page-questionnaire__item
+						.item__lft Укажите номер телефона этого человека: *
+						.item__rht
+							input(type="text")
+					.page-questionnaire__item
+						.item__lft Принимаете ли какие-либо лекарственные препараты? *
+						.item__rht
+							.item__radio Да
+							.item__radio.item__radio_active Нет
+					.page-questionnaire__item
+						.item__lft Принимаемые лекарственные препараты
+						.item__rht
+							textarea
+					.page-questionnaire__item
+						.item__lft Дополнительно хочу сообщить о состоянии моего здоровья следующее:
+						.item__rht
+							textarea
+					input(type="checkbox")#ch2Qst
+					label(for="ch2Qst").label-checkbox Я искренне ответил(а) на все пункты анкеты * 
+					.page-questionnaire__bottom
+						button Сохранить и закрыть
+						a(href="#")
+							img(src="img/svg/printer.svg" alt="printer")
+							span Распечатать анкету
+						a(href="#")
+							img(src="img/svg/printer.svg" alt="printer")
+							span Согласие на обработку персональных данных
+
+
+
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

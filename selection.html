@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Site was developed by Vlas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Description of website">
+  <meta name="keywords" content="Website">
+  <!-- Montserrat FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+  <!-- Slick SLIDER -->
+  <link rel="stylesheet" href="css/slick/slick-theme.css">
+  <link rel="stylesheet" href="css/slick/slick.css">
+  <!-- Slick SLIDER -->
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="body-bgd page-selection">
+  <main class="wrapper">
+    <aside>
+      <a class="aside__logo" href="#">
+        <img src="img/svg/logo.svg" alt="Logo">
+      </a>
+      <ul>
+        <li>
+          <a href="#">
+            <img src="img/aside-ico-1.png" alt="Ico" width="26"><span>Главная</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/svg/aside-ico-2.svg" alt="Ico"><span>Профиль</span>
+          </a>
+        </li>
+        <li class="li_active">
+          <a href="#">
+            <img src="img/svg/aside-ico-3.svg" alt="Ico"><span>Запись на приём</span><span class="span-mob">Запись</span>
+          </a>
+        </li>
+        <li class="li__logo_mob">
+          <a href="#">
+            <img src="img/svg/logo-mob.svg" alt="Ico">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/svg/aside-ico-4.svg" alt="Ico"><span>Лечение</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/svg/aside-ico-5.svg" alt="Ico"><span>Оплата</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/svg/aside-ico-6.svg" alt="Ico"><span>Услуги</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <div class="main-right">
+      <a class="header__logo" href="#">
+        <img src="img/svg/logo.svg" alt="Logo">
+      </a>
+      <header>
+        <div class="header"><a class="header__appointment" href="#">Запись на приём</a><a class="header__payment" href="#">Оплата</a>
+          <a class="header__persone" href="#">
+            <img src="img/persone.png" alt="Persone"><span>Татьяна Иванова</span>
+          </a>
+          <a class="header__exit" href="#">
+            <img src="img/svg/exit.svg" alt="Exit"><span>Выход</span>
+          </a>
+        </div>
+      </header>
+      <div class="page-selection__content">
+        <h1>Подбор лечения</h1>
+        <ol>
+          <li class="page-selection__block page-selection__block_active" data-num="1">
+            <h2>Выберите услугу</h2>
+            <ul>
+              <li>Лечение зубов</li>
+              <li>Имплантация</li>
+              <li>Удаление зубов</li>
+              <li>Виниры и реставрация</li>
+              <li>Протезирование</li>
+              <li>Брекеты и исправление прикуса</li>
+              <li>Отбеливание</li>
+              <li>Детская стоматология</li>
+            </ul>
+          </li>
+          <li class="page-selection__block" data-num="2">
+            <h2>Количество зубов</h2>
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li>7</li>
+              <li>8</li>
+              <li>9 и более</li>
+            </ul>
+          </li>
+          <li class="page-selection__block" data-num="3">
+            <h2>Какая у Вас ситуация с зубами?</h2>
+            <ul>
+              <li>Острая боль</li>
+              <li>Давно не был, хочу проверить</li>
+              <li>Не болит, но вижу темное пятно на зубе</li>
+              <li>Появился неприятный запах изо рта</li>
+              <li>Реакция на холодное/горячее</li>
+              <li>Нужно лечение перед брекетами</li>
+              <li>Замена старых промб</li>
+              <li>Другое</li>
+            </ul>
+          </li>
+          <li class="page-selection__block" data-num="4">
+            <h2>Какие дополнительные опции и услуги вам нужны?</h2>
+            <ul>
+              <li>Лечение кариеса</li>
+              <li>Лечение десен</li>
+              <li>Имплантация / протезирование</li>
+              <li>Отбеливание</li>
+              <li>Гигиеническая чистка</li>
+              <li>Брекеты / Элайнеры</li>
+              <li>Удаление</li>
+              <li>Рассрочка</li>
+              <li>Коррекция формы и цвета</li>
+            </ul>
+          </li>
+          <li class="page-selection__block" data-num="5">
+            <h2>Когда планируете начать лечение?</h2>
+            <ul>
+              <li>Как можно быстрее</li>
+              <li>В ближайшие 2 недели</li>
+              <li>В ближайшие месяцы</li>
+            </ul>
+          </li>
+        </ol>
+        <section class="section-table section-table__selection">
+          <h2 class="section-table__title">Мы подобрали для вас лечение</h2>
+          <div class="section-table__content">
+            <table>
+              <thead>
+                <tr>
+                  <td>
+                    <div class="td__sides"><span>id</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="td__sides"><span>Наименование</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="td__sides"><span>Время, мин</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="td__sides"><span>Стоимость, руб.</span>
+                    </div>
+                  </td>
+                  <td></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <p>1</p>
+                  </td>
+                  <td>
+                    <p>
+                      <div class="td__sides"><span>Консультация врача</span>
+                        <div class="i-text">
+                          <img src="img/svg/i.svg" alt="Ico">
+                          <div class="i-text__block">
+                            <p>Всплывающая подсказка с кратким описанием услуги при нажатии на иконку</p>
+                          </div>
+                        </div>
+                      </div>
+                    </p>
+                  </td>
+                  <td>
+                    <p>20 мин</p>
+                  </td>
+                  <td>
+                    <p>750 руб.</p>
+                  </td>
+                  <td>
+                    <div class="td__delete">
+                      <img src="img/svg/delete.svg" alt="Delete">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>2</p>
+                  </td>
+                  <td>
+                    <p>
+                      <div class="td__sides"><span>Лечение кариеса</span>
+                        <div class="i-text">
+                          <img src="img/svg/i.svg" alt="Ico">
+                          <div class="i-text__block">
+                            <p>Всплывающая подсказка с кратким описанием услуги при нажатии на иконку</p>
+                          </div>
+                        </div>
+                      </div>
+                    </p>
+                  </td>
+                  <td>
+                    <p>45 мин</p>
+                  </td>
+                  <td>
+                    <p>1 500 руб.</p>
+                  </td>
+                  <td>
+                    <div class="td__delete">
+                      <img src="img/svg/delete.svg" alt="Delete">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>3</p>
+                  </td>
+                  <td>
+                    <p>
+                      <div class="td__sides"><span>Лечение десен</span>
+                        <div class="i-text">
+                          <img src="img/svg/i.svg" alt="Ico">
+                          <div class="i-text__block">
+                            <p>Всплывающая подсказка с кратким описанием услуги при нажатии на иконку</p>
+                          </div>
+                        </div>
+                      </div>
+                    </p>
+                  </td>
+                  <td>
+                    <p>45 мин</p>
+                  </td>
+                  <td>
+                    <p>1 400 руб.</p>
+                  </td>
+                  <td>
+                    <div class="td__delete">
+                      <img src="img/svg/delete.svg" alt="Delete">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>4</p>
+                  </td>
+                  <td>
+                    <p>
+                      <div class="td__sides"><span>Гигиеническая чистка</span>
+                      </div>
+                    </p>
+                  </td>
+                  <td>
+                    <p>60 мин</p>
+                  </td>
+                  <td>
+                    <p>3 400 руб.</p>
+                  </td>
+                  <td>
+                    <div class="td__delete">
+                      <img src="img/svg/delete.svg" alt="Delete">
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="section-table__bottom">
+            <div class="pagination">
+              <div class="pagination__arr pagination__arr_prev">
+                <img src="img/svg/left.svg" alt="Prev">
+              </div>
+              <div class="pagination__num">1</div>
+              <div class="pagination__num">2</div>
+              <div class="pagination__num">...</div>
+              <div class="pagination__num">9</div>
+              <div class="pagination__num">10</div>
+              <div class="pagination__arr pagination__arr_next">
+                <img src="img/svg/right.svg" alt="Next">
+              </div>
+            </div>
+            <div class="section-table__all">Всего: 1032</div>
+            <div class="section-table__show">
+              <p>Показывать по:</p>
+              <ul>
+                <li class="li_active">10</li>
+                <li>20</li>
+                <li>30</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <h2 class="title-h2">Запись на приём</h2>
+        <section class="white-block section-calendar">
+          <div class="section__sides">
+            <div class="lft">
+              <div id="calendar">
+                <div class="calendar__block calendar__block_active calendar__block_9">
+                  <table cellspacing="10">
+                    <thead>
+                      <tr>
+                        <th>пн</th>
+                        <th>вт</th>
+                        <th>ср</th>
+                        <th>чт</th>
+                        <th>пт</th>
+                        <th>сб</th>
+                        <th>вс</th>
+                      </tr>
+                      <tr></tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                      </tr>
+                      <tr>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                      </tr>
+                      <tr>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                      </tr>
+                      <tr>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                        <td>1</td>
+                        <td>2</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="calendar__block calendar__block_10">
+                  <table cellspacing="10">
+                    <thead>
+                      <tr>
+                        <th>пн</th>
+                        <th>вт</th>
+                        <th>ср</th>
+                        <th>чт</th>
+                        <th>пт</th>
+                        <th>сб</th>
+                        <th>вс</th>
+                      </tr>
+                      <tr></tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                      </tr>
+                      <tr>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                      </tr>
+                      <tr>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                      </tr>
+                      <tr>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                      </tr>
+                      <tr></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="calendar__block calendar__block_11">
+                  <table cellspacing="10">
+                    <thead>
+                      <tr>
+                        <th>пн</th>
+                        <th>вт</th>
+                        <th>ср</th>
+                        <th>чт</th>
+                        <th>пт</th>
+                        <th>сб</th>
+                        <th>вс</th>
+                      </tr>
+                      <tr></tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                      </tr>
+                      <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                      </tr>
+                      <tr>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                      </tr>
+                      <tr>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="calendar__block calendar__block_12">
+                  <table cellspacing="10">
+                    <thead>
+                      <tr>
+                        <th>пн</th>
+                        <th>вт</th>
+                        <th>ср</th>
+                        <th>чт</th>
+                        <th>пт</th>
+                        <th>сб</th>
+                        <th>вс</th>
+                      </tr>
+                      <tr></tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td class="td_have-order">10</td>
+                        <td>11</td>
+                        <td>12</td>
+                      </tr>
+                      <tr>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                      </tr>
+                      <tr>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                      </tr>
+                      <tr>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                        <td>1</td>
+                        <td>2</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="calendar__mounths">
+                <ul>
+                  <li class="li_active" data-mounth="9">Сентябрь</li>
+                  <li data-mounth="10">Октябрь</li>
+                  <li data-mounth="11">Ноябрь</li>
+                  <li data-mounth="12">Декабрь</li>
+                </ul>
+              </div>
+            </div>
+            <div class="rht">
+              <h3>Доступное время</h3>
+              <ul class="calendar__time">
+                <li>11:00 - 12:00</li>
+                <li class="li_active">13:00 - 14:00</li>
+                <li>14:00 - 15:00</li>
+              </ul>
+            </div>
+          </div>
+          <div class="white-block__bottom">
+            <input type="checkbox" id="ch1Selection">
+            <label class="label-checkbox" for="ch1Selection">Даю своё согласие на обработку моих персональных данных, а также добровольное согласие на все виды услуг.</label>
+            <button class="send">Записаться на приём</button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+</body>
+<footer>
+  <div class="wrapper">
+    <div class="footer">
+      <div class="footer__lft">© МедекаДенталГрупп, 2021</div>
+      <a class="footer__rht" href="#">
+        <img src="img/svg/footer-logo.svg" alt="Logo">
+        <img class="logo-mob" src="img/svg/footer-logo-1.svg" alt="Logo">
+      </a>
+    </div>
+  </div>
+</footer>
+<!-- jQuery JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- slick JS -->
+<script src="js/slick.min.js"></script>
+<!-- wow JS -->
+<script src="js/wow.min.js"></script>
+<!-- main JS -->
+<script src="js/main.js"></script>
+
+</html>

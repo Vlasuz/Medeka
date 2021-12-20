@@ -1,0 +1,245 @@
+extends includes/header.pug
+
+block content
+
+	body.body-bgd.page-selection
+		main.wrapper
+			include includes/aside.pug
+			.main-right
+				a(href="#").header__logo
+					img(src="img/svg/logo.svg" alt="Logo")
+				header
+					.header
+						a(href="#").header__appointment Запись на приём
+						a(href="#").header__payment Оплата
+						a(href="#").header__persone
+							img(src="img/persone.png" alt="Persone")
+							span Татьяна Иванова
+						a(href="#").header__exit
+							img(src="img/svg/exit.svg" alt="Exit")
+							span Выход
+
+				.page-selection__content
+					h1 Подбор лечения
+					ol
+						li.page-selection__block(data-num="1").page-selection__block_active
+							h2 Выберите услугу
+							ul
+								li Лечение зубов
+								li Имплантация
+								li Удаление зубов
+								li Виниры и реставрация
+								li Протезирование
+								li Брекеты и исправление прикуса
+								li Отбеливание
+								li Детская стоматология
+						li.page-selection__block(data-num="2")
+							h2 Количество зубов
+							ul
+								li 1
+								li 2
+								li 3
+								li 4
+								li 5
+								li 6
+								li 7
+								li 8
+								li 9 и более
+						li.page-selection__block(data-num="3")
+							h2 Какая у Вас ситуация с зубами?
+							ul
+								li Острая боль
+								li Давно не был, хочу проверить
+								li Не болит, но вижу темное пятно на зубе
+								li Появился неприятный запах изо рта
+								li Реакция на холодное/горячее
+								li Нужно лечение перед брекетами
+								li Замена старых промб
+								li Другое
+						li.page-selection__block(data-num="4")
+							h2 Какие дополнительные опции и услуги вам нужны?
+							ul
+								li Лечение кариеса
+								li Лечение десен
+								li Имплантация / протезирование
+								li Отбеливание
+								li Гигиеническая чистка
+								li Брекеты / Элайнеры
+								li Удаление
+								li Рассрочка
+								li Коррекция формы и цвета
+						li.page-selection__block(data-num="5")
+							h2 Когда планируете начать лечение?
+							ul
+								li Как можно быстрее
+								li В ближайшие 2 недели
+								li В ближайшие месяцы
+					section.section-table.section-table__selection
+						h2.section-table__title Мы подобрали для вас лечение
+						.section-table__content
+							table
+								thead
+									tr
+										td
+											.td__sides
+												span id
+										td
+											.td__sides
+												span Наименование
+										td
+											.td__sides
+												span Время, мин
+										td
+											.td__sides
+												span Стоимость, руб.
+										td
+								tbody
+									tr
+										td
+											p 1
+										td
+											p
+												.td__sides
+													span Консультация врача
+													.i-text
+														img(src="img/svg/i.svg" alt="Ico")
+														.i-text__block
+															p Всплывающая подсказка с кратким описанием услуги при нажатии на иконку
+										td
+											p 20 мин
+										td
+											p 750 руб.
+										td
+											.td__delete
+												img(src="img/svg/delete.svg" alt="Delete")
+									tr
+										td
+											p 2
+										td
+											p
+												.td__sides
+													span Лечение кариеса
+													.i-text
+														img(src="img/svg/i.svg" alt="Ico")
+														.i-text__block
+															p Всплывающая подсказка с кратким описанием услуги при нажатии на иконку
+										td
+											p 45 мин
+										td
+											p 1 500 руб.
+										td
+											.td__delete
+												img(src="img/svg/delete.svg" alt="Delete")
+									tr
+										td
+											p 3
+										td
+											p
+												.td__sides
+													span Лечение десен
+													.i-text
+														img(src="img/svg/i.svg" alt="Ico")
+														.i-text__block
+															p Всплывающая подсказка с кратким описанием услуги при нажатии на иконку
+										td
+											p 45 мин
+										td
+											p 1 400 руб.
+										td
+											.td__delete
+												img(src="img/svg/delete.svg" alt="Delete")
+									tr
+										td
+											p 4
+										td
+											p
+												.td__sides
+													span Гигиеническая чистка
+										td
+											p 60 мин
+										td
+											p 3 400 руб.
+										td
+											.td__delete
+												img(src="img/svg/delete.svg" alt="Delete")
+
+						.section-table__bottom
+							.pagination
+								.pagination__arr.pagination__arr_prev
+									img(src='img/svg/left.svg' alt="Prev")
+								.pagination__num 1
+								.pagination__num 2
+								.pagination__num ...
+								.pagination__num 9
+								.pagination__num 10
+								.pagination__arr.pagination__arr_next
+									img(src='img/svg/right.svg' alt="Next")
+							.section-table__all Всего: 1032
+							.section-table__show
+								p Показывать по: 
+								ul
+									li.li_active 10
+									li 20
+									li 30
+					h2.title-h2 Запись на приём
+					section.white-block.section-calendar
+						.section__sides
+							.lft
+								#calendar
+									.calendar__block.calendar__block_active.calendar__block_9
+										<table cellspacing="10"><thead><tr><th>пн</th><th>вт</th><th>ср</th><th>чт</th><th>пт</th><th>сб</th><th>вс</th></tr><tr></tr></thead><tbody><tr><td>29</td><td>30</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr><tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td></tr><tr><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td></tr><tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td></tr><tr><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td>1</td><td>2</td></tr></tbody></table>
+									.calendar__block.calendar__block_10
+										<table cellspacing="10"><thead><tr><th>пн</th><th>вт</th><th>ср</th><th>чт</th><th>пт</th><th>сб</th><th>вс</th></tr><tr></tr></thead><tbody><tr><td>27</td><td>28</td><td>29</td><td>30</td><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr><tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td></tr><tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td></tr><tr></tr></tbody></table>
+									.calendar__block.calendar__block_11
+										<table cellspacing="10"><thead><tr><th>пн</th><th>вт</th><th>ср</th><th>чт</th><th>пт</th><th>сб</th><th>вс</th></tr><tr></tr></thead><tbody><tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr><tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr><tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr><tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr><tr><td>29</td><td>30</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr></tbody></table>
+									.calendar__block.calendar__block_12
+										<table cellspacing="10"><thead><tr><th>пн</th><th>вт</th><th>ср</th><th>чт</th><th>пт</th><th>сб</th><th>вс</th></tr><tr></tr></thead><tbody><tr><td>29</td><td>30</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr><tr><td>6</td><td>7</td><td>8</td><td>9</td><td class="td_have-order">10</td><td>11</td><td>12</td></tr><tr><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td></tr><tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td></tr><tr><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td>1</td><td>2</td></tr></tbody></table>
+								.calendar__mounths
+									ul
+										li(data-mounth="9").li_active Сентябрь
+										li(data-mounth="10") Октябрь
+										li(data-mounth="11") Ноябрь
+										li(data-mounth="12") Декабрь
+							.rht
+								h3 Доступное время
+								ul.calendar__time
+									li 11:00 - 12:00
+									li.li_active 13:00 - 14:00
+									li 14:00 - 15:00
+						.white-block__bottom
+							input(type="checkbox")#ch1Selection
+							label(for="ch1Selection").label-checkbox Даю своё согласие на обработку моих персональных данных, а также добровольное согласие на все виды услуг.
+							button.send Записаться на приём
+
+
+
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

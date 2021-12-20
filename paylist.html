@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Site was developed by Vlas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Description of website">
+  <meta name="keywords" content="Website">
+  <!-- Montserrat FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+  <!-- Slick SLIDER -->
+  <link rel="stylesheet" href="css/slick/slick-theme.css">
+  <link rel="stylesheet" href="css/slick/slick.css">
+  <!-- Slick SLIDER -->
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="body-bgd page-profile">
+  <div class="popup popup-payblock">
+    <div class="popup__bgd"></div>
+    <div class="popup__content">
+      <div class="popup__close">
+        <img src="img/svg/close.svg" alt="Close">
+      </div>
+      <h2>Счет № 234 от 07.08.2021 г.</h2><span class="span__title">Кому платим</span>
+      <p class="p__main">ООО «МедекаДенталГрупп»</p><a class="a__bottom" href="#">Показать реквизиты</a><span class="span__title">Кто платит</span>
+      <p class="p__main">Деревянко Татьяна Ивановна</p><span class="span__title">За что оплата</span>
+      <section class="section-table section-table__orders">
+        <div class="section-table__content">
+          <table>
+            <thead>
+              <tr>
+                <td>
+                  <div class="td__sides"><span>№</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="td__sides"><span>Наименование</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="td__sides"><span>Стоимость</span>
+                  </div>
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p>1</p>
+                </td>
+                <td>
+                  <p>Определение степени патологической подвижности зубов</p>
+                </td>
+                <td>
+                  <p>750 руб.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>2</p>
+                </td>
+                <td>
+                  <p>Консультация врача</p>
+                </td>
+                <td>
+                  <p>1 500 руб.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>1</p>
+                </td>
+                <td>
+                  <p>Удаление зуба простое</p>
+                </td>
+                <td>
+                  <p>3 400 руб.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="all-sum">Итого 5 650 руб.</div>
+      </section>
+      <input type="checkbox" id="popCh1">
+      <label class="label-checkbox" for="popCh1">Даю <a href="#">добровольное согласие</a> на все виды услуг</label>
+      <button class="button-pay" data-popup="thx">Оплатить</button>
+    </div>
+  </div>
+  <div class="popup popup-thx">
+    <div class="popup__bgd"></div>
+    <div class="popup__content">
+      <div class="popup__close">
+        <img src="img/svg/close.svg" alt="Close">
+      </div>
+      <h2>Ваша заявка успешно отправлена!</h2>
+      <p>Ожидайте звонка менеджера для подтверждения записи.</p>
+      <button>Спасибо</button>
+    </div>
+  </div>
+  <main class="wrapper">
+    <aside>
+      <a class="aside__logo" href="#">
+        <img src="img/svg/logo.svg" alt="Logo">
+      </a>
+      <ul>
+        <li>
+          <a href="#">
+            <img src="img/aside-ico-1.png" alt="Ico" width="26"><span>Главная</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/svg/aside-ico-2.svg" alt="Ico"><span>Профиль</span>
+          </a>
+        </li>
+        <li class="li_active">
+          <a href="#">
+            <img src="img/svg/aside-ico-3.svg" alt="Ico"><span>Запись на приём</span><span class="span-mob">Запись</span>
+          </a>
+        </li>
+        <li class="li__logo_mob">
+          <a href="#">
+            <img src="img/svg/logo-mob.svg" alt="Ico">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/svg/aside-ico-4.svg" alt="Ico"><span>Лечение</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/svg/aside-ico-5.svg" alt="Ico"><span>Оплата</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/svg/aside-ico-6.svg" alt="Ico"><span>Услуги</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <div class="main-right">
+      <a class="header__logo" href="#">
+        <img src="img/svg/logo.svg" alt="Logo">
+      </a>
+      <header>
+        <div class="header"><a class="header__appointment" href="#">Запись на приём</a><a class="header__payment" href="#">Оплата</a>
+          <a class="header__persone" href="#">
+            <img src="img/persone.png" alt="Persone"><span>Татьяна Иванова</span>
+          </a>
+          <a class="header__exit" href="#">
+            <img src="img/svg/exit.svg" alt="Exit"><span>Выход</span>
+          </a>
+        </div>
+      </header>
+      <section class="section-table section-table__accounts">
+        <h2 class="section-table__title">Счета</h2>
+        <div class="section-table__content">
+          <table>
+            <thead>
+              <tr>
+                <td>
+                  <div class="td__sides"><span>№</span>
+                    <div class="sort-ico">
+                      <img src="img/svg/sort.svg" alt="Sort">
+                      <img class="reverse" src="img/svg/sort-1.svg" alt="Sort">
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="td__sides"><span>Дата</span>
+                    <div class="sort-ico">
+                      <img src="img/svg/sort.svg" alt="Sort">
+                      <img class="reverse" src="img/svg/sort-1.svg" alt="Sort">
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="td__sides"><span>Статус</span>
+                    <div class="sort-ico">
+                      <img src="img/svg/sort.svg" alt="Sort">
+                      <img class="reverse" src="img/svg/sort-1.svg" alt="Sort">
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="td__sides"><span>Наименование</span>
+                    <div class="sort-ico">
+                      <img src="img/svg/sort.svg" alt="Sort">
+                      <img class="reverse" src="img/svg/sort-1.svg" alt="Sort">
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="td__sides"><span>Стоимость</span>
+                    <div class="sort-ico">
+                      <img src="img/svg/sort.svg" alt="Sort">
+                      <img class="reverse" src="img/svg/sort-1.svg" alt="Sort">
+                    </div>
+                  </div>
+                </td>
+                <td></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p>1</p>
+                </td>
+                <td>
+                  <p>25.08.2021</p>
+                </td>
+                <td>
+                  <div class="status status_cancel">отменен</div>
+                </td>
+                <td>
+                  <p>Зуб(ы): 11-18,21-28,31-38,41-48 Профессиональная игра в хокей</p>
+                </td>
+                <td>
+                  <p>13 400 руб.</p>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <p>2</p>
+                </td>
+                <td>
+                  <p>31.08.2021</p>
+                </td>
+                <td>
+                  <div class="status status_waiting">ожидает оплаты</div>
+                </td>
+                <td>
+                  <p>Первичная консультация гигиена</p>
+                </td>
+                <td>
+                  <p>5700 руб.</p>
+                </td>
+                <td>
+                  <button data-popup="payblock">Оплатить</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>3</p>
+                </td>
+                <td>
+                  <p>25.08.2021</p>
+                </td>
+                <td>
+                  <div class="status status_done">оплачен</div>
+                </td>
+                <td>
+                  <p>Фторирование</p>
+                </td>
+                <td>
+                  <p>1050 руб.</p>
+                </td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="section-table__bottom">
+          <div class="pagination">
+            <div class="pagination__arr pagination__arr_prev">
+              <img src="img/svg/left.svg" alt="Prev">
+            </div>
+            <div class="pagination__num">1</div>
+            <div class="pagination__num">2</div>
+            <div class="pagination__num">...</div>
+            <div class="pagination__num">9</div>
+            <div class="pagination__num">10</div>
+            <div class="pagination__arr pagination__arr_next">
+              <img src="img/svg/right.svg" alt="Next">
+            </div>
+          </div>
+          <div class="section-table__all">Всего: 1032</div>
+          <div class="section-table__show">
+            <p>Показывать по:</p>
+            <ul>
+              <li class="li_active">10</li>
+              <li>20</li>
+              <li>30</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+<footer>
+  <div class="wrapper">
+    <div class="footer">
+      <div class="footer__lft">© МедекаДенталГрупп, 2021</div>
+      <a class="footer__rht" href="#">
+        <img src="img/svg/footer-logo.svg" alt="Logo">
+        <img class="logo-mob" src="img/svg/footer-logo-1.svg" alt="Logo">
+      </a>
+    </div>
+  </div>
+</footer>
+<!-- jQuery JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- slick JS -->
+<script src="js/slick.min.js"></script>
+<!-- wow JS -->
+<script src="js/wow.min.js"></script>
+<!-- main JS -->
+<script src="js/main.js"></script>
+
+</html>
